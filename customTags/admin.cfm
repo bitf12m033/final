@@ -36,7 +36,7 @@
   <cfelse>
   <!---begin of footer--->
   <div id="footer">
-    <p>&copy; Copyright 2016 - HD Street Concert Band</p>
+    <p>&copy; Copyright <cfoutput>#dateFormat(now(),'YYYY')#</cfoutput> - HD Street Concert Band</p>
   </div>
 </div>
 </body>

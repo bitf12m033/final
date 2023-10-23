@@ -5,7 +5,8 @@
 		<cfquery  name="rsPage">
 			SELECT FLD_PAGETITLE, FLD_PAGECONTENT
 			FROM TBL_PAGES
-			WHERE FLD_PAGEID = <cfqueryparam value="#arguments.pageID#" cfsqltype="cf_sql_integer" /> AND FLD_PAGEISACTIVE = <cfqueryparam  value="1" cfsqltype="cf_sql_integer" />
+			WHERE FLD_PAGEID = <cfqueryparam value="#arguments.pageID#" cfsqltype="cf_sql_integer" /> AND 
+			FLD_PAGEISACTIVE = <cfqueryparam  value="1" cfsqltype="cf_sql_integer" />
 		</cfquery>
 		<cfreturn rsPage />
 	</cffunction>
